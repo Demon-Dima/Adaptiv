@@ -56,7 +56,7 @@
 
 
 
-@media (min-width: 2400px) {/*768px*/
+@media (min-width: 2300px) {/*768px*/
   body {
     background-color: green;
   }
