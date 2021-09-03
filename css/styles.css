@@ -53,12 +53,15 @@
     font-size: 42px;
   }
   
+
+
+
 @media (min-width: 2400px) {/*768px*/
   body {
     background-color: green;
   }
   h3 {
-   /* color: fuchsia;*/
+    color: green;
     text-align: center;
   } 
 
