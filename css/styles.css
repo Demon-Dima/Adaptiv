@@ -25,11 +25,6 @@
     line-height: 3;
   }
 
-  img {
-    width: 1050px;/*290px*/
-    margin: auto;
-  }
-
   .list {
     padding: 0;
     list-style: none;
@@ -43,6 +38,11 @@
     color:#212121;
   }
 
+  img {
+    width: 1050px;/*290px*/
+    margin: auto;
+  }
+
   h3 {
     text-align: left;
     color: red;
@@ -54,9 +54,9 @@
   }
   
 
+/*MEDIA*/
 
-
-@media (min-width: 2300px) {/*768px*/
+@media screen and (orientation: landscape) {/* min-width: 2400px768px*/
   body {
     background-color: green;
   }
@@ -66,18 +66,19 @@
   } 
 
   .container {
-    width: 2400px;/*768px*/
+    width: 100%;/*768px*/
   }
 
   .list-item {
-    width: 2380px;/*748px*/
+    width: 100%;/*2380px 748px*/
     min-height:450px ;/*190px*/
+    padding: 5px;
   }
 
   img {
     float: left;
-    width: 430px;/*170px*/
-    height: 430px;/*170px*/
+    width: 20%;/* 430px 170px*/
+    height: 430px;/*430px 170px*/
     padding-right: 10px;
   }
   
