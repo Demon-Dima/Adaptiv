@@ -67,18 +67,20 @@
 
   .container {
     width: 100%;/*768px*/
+    height: 100%;
   }
 
   .list-item {
     width: 100%;/*2380px 748px*/
-    min-height:450px ;/*190px*/
+    min-height: 210px ;/* 450px 190px*/
     padding: 5px;
+    margin-bottom: 10px;/*10px*/
   }
 
   img {
     float: left;
-    width: 20%;/* 430px 170px*/
-    height: 430px;/*430px 170px*/
+    width: 200px;/* 430px 170px*/
+    height: 200px;
     padding-right: 10px;
   }
   
