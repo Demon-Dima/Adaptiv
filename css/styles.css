@@ -26,8 +26,8 @@
   }
 
   .list {
-    min-width: 980px;
-    min-height: 980px;
+    min-width: 400px;
+    min-height: 400px;
     display: grid;
     grid-template-columns:  repeat(3, 30%);
     
@@ -73,22 +73,26 @@
 
 /*MEDIA*/
 
-@media (max-width: 1200px) {
+@media (max-width: 1080px) {
   .container {
-    max-width:  920px;
+    background-color:  rgb(185, 182, 182);
+   }
+  .list {
+    grid-template-columns: 100% ;
+   }
+   .list-item {
+    min-height: 400px;
   }
-
-  .list-item {
- 
+  p {
+    font-size: 24px;
   }
 }
 @media (max-width: 992px) {
   .container {
-
   }
   .list-item {
 
-    
+
   }
 } 
 @media (max-width: 767px) {
