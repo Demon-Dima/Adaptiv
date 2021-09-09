@@ -72,9 +72,27 @@
   
 
 /*MEDIA*/
+@media (max-width: 2400px) {
+  .container {
+    
+    background-color:  rgb(116, 108, 108);
+  }
+  .list {
+    grid-template-columns: 1fr 1fr 1fr ;
+   }
+   .list-item {
+    min-height: 100px;
+  }
+   p {
+    font-size: 48px;
+  }
+} 
+
+
 
 @media (max-width: 1080px) {
   .container {
+    min-width: 100%;
     background-color:  rgb(185, 182, 182);
    }
   .list {
@@ -87,23 +105,8 @@
     font-size: 24px;
   }
 }
-@media (max-width: 992px) {
-  .container {
-  }
-  .list-item {
-
-
-  }
-} 
-@media (max-width: 767px) {
-  .container {
-     
-  }
-  .list-item {
-    
-  }
-
-} 
+ 
+ 
 /*
 @media screen and (orientation: landscape) {/* min-width: 2400px768px*/
  /* body {
