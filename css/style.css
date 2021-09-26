@@ -146,6 +146,8 @@ body {
   .page__practice {
 
   }
+
+  .page__whoweare {}
 /*----------------main-block--------------------------*/
 .main-block {
     position: relative;
@@ -481,6 +483,157 @@ text-decoration: underline;
     padding: 0px 0px 60% 0px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------Who we are--------------------------*/
+ 
+.whoweare {
+    padding: 100px 0px 130px 0px;
+}
+@media(max-width: 950px){ 
+    .whoweare {
+        padding: 50px 0px 50px 0px;
+    }
+}
+}
+@media(max-width: 767px){
+    .whoweare  {
+        padding: 20px 0px 50px 0px;
+    }
+}
+.whoweare__container {
+}
+.whoweare__header {
+    margin: 0px 0px 100px 0px;
+}
+@media(max-width: 950px){ 
+    .whoweare__header {
+        margin: 0px 0px 30px 0px;
+    }
+}
+.whoweare__body {
+    display: flex;
+    align-items: flex-start;/*!!!!!!*/
+}
+
+@media(max-width: 950px){ 
+    .whoweare__body {
+        flex-direction: column-reverse ;
+        align-items: stretch;/*  БЕЗ НЕГО БЛОК С ВИДЕО ПРОПАДЁТ!!!!!!*/
+    }
+}
+.whoweare__video {
+    flex: 0 0 57%;/*600(ширина контейнера) делим на 1046(ширина ограничующего контейнера) и умножить на 100 ,получим 57%*/
+    position: relative;
+    padding: 0px 0px 42.25% 0px;/*442(ширина контейнера) делим на 1046(ширина ограничующего контейнера) и умножить на 100,получим 42,25%*/
+}
+.whoweare__video iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: o;
+    object-fit: cover;/*!!!!!!!!*/
+}
+.whoweare__content {
+    flex: 1 1 auto; /*если мы забудем вывести видео, наш контент не пропадёт*/
+    padding: 20px 0px 0px 121px;
+}
+@media(max-width: 1040px){
+    .whoweare__content {
+        padding: 0px 0px 0px 50px;
+    }
+}
+@media(max-width: 950px){
+    .whoweare__content {
+        padding: 0px 0px 0px 0px;
+    }
+    .whoweare__video {
+        padding: 0px 0px 56.25% 0px;/*пророрция видео 315 на 560. мы делим их и получаем 56.25 процентов */
+
+    }
+    .whoweare__video :not( :last-child) {
+        padding: 30px 0px 0px 0px;
+    }
+
+    .whoweare__top :not(:last-child) {
+        margin: 0px 0px 30px 0px;
+    }
+}
+.whoweare__title {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 142%;
+    letter-spacing: 0.2px;
+
+}
+@media(max-width: 950px){ 
+    .whoweare__title {
+        font-size:  24px;
+    }
+}
+.whoweare__title :not(:last-child) {
+    margin: 0px 0px 10px 0px;
+}
+.whoweare__text {
+    color: #737373;
+    line-height: 142%;
+}
+.whoweare__top :not(:last-child) {
+    margin: 0px 0px 50px 0px;
+}
+.whoweare__items {
+ }
+.whoweare__item {}
+
+.whoweare__item :not(:last-child){
+    margin: 0px 0px 30px 0px;
+
+}
+
+
+.item-whoweare {
+    display: flex;
+}
+.item-whoweare__icon {
+    flex: 0 0 32px;
+}
+.item-whoweare__body {
+    flex: 1 1 auto; 
+    padding: 0px 0px 0px 20px;
+}
+.item-whoweare__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+}
+.item-whoweare__title :not(:last-child){
+    margin: 0px 0px 5px 0px;
+}
+.item-whoweare__text {
+    color: #737373;
+    white-space: nowrap;/*!!! чтобы текст точно был в ширину*/
+    line-height: 142%;
+    width: 225px;
+    /*урежем текст и поставим трииточее*/
+    overflow: hidden;/*!!! Требует фикс значение*/
+    text-overflow: ellipsis; /*!!!*/
+}
 
 /*----------------footer--------------------------*/
 .footer {
